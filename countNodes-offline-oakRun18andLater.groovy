@@ -1,8 +1,8 @@
 import java.io.InputStream;
-import java.util.concurrent.atomic.AtomicInteger
-import org.apache.jackrabbit.oak.api.Type
-import org.apache.jackrabbit.oak.spi.state.NodeState
-import org.apache.jackrabbit.oak.spi.state.NodeStore
+import java.util.concurrent.atomic.AtomicInteger;
+import org.apache.jackrabbit.oak.api.Type;
+import org.apache.jackrabbit.oak.spi.state.NodeState;
+import org.apache.jackrabbit.oak.spi.state.NodeStore;
 
 def countNodes(n, deep = false, String path = "/", Integer flush = 100000, AtomicInteger count = new AtomicInteger(0), AtomicInteger binaries = new AtomicInteger(0), root = true) {
   if(root) {
